@@ -86,6 +86,8 @@ function ct_cele_add_customizer_content( $wp_customize ) {
 
 			if ( $social_site == 'rss' ) {
 				$label = __('RSS', 'cele');
+			} elseif ( $social_site == 'researchgate' ) {
+				$label = __('ResearchGate', 'cele');
 			} elseif ( $social_site == 'soundcloud' ) {
 				$label = __('SoundCloud', 'cele');
 			} elseif ( $social_site == 'slideshare' ) {
