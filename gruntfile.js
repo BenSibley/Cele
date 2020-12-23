@@ -113,12 +113,12 @@ module.exports = function(grunt) {
             zip: {
                 command: [
                     // delete existing copies (if they exist)
-                    'rm -R /Users/bensibley/Documents/compete-themes/dist/cele || true',
-                    'rm -R /Users/bensibley/Documents/compete-themes/dist/cele.zip || true',
+                    'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/cele" || true',
+                    'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/cele.zip" || true',
                     // copy folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Sites/cele/wp-content/themes/cele" /Users/bensibley/Documents/compete-themes/dist/ <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/cele/wp-content/themes/cele" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
                     // open dist
-                    'cd /Users/bensibley/Documents/compete-themes/dist/',
+                    'cd "/Users/bensibley/Dropbox/Compete Themes/Distribution/"',
                     // zip the cele folder
                     'zip -r cele.zip cele'
                 ].join('&&')
