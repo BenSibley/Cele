@@ -259,6 +259,12 @@ img,
   color: $color-gray-20;
   text-align: center;
 }
+.wp-block-group.alignwide,
+.wp-block-group .alignwide,
+.wp-block-group.alignfull,
+.wp-block-group .alignfull {
+  line-height: 1.5;
+}
 
 /* Form styles */
 
