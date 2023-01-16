@@ -1808,6 +1808,7 @@ li.pingback.bypostauthor:before {
 .social-media-icons a {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -1817,6 +1818,17 @@ li.pingback.bypostauthor:before {
   color: #666666;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
+}
+.social-media-icons a.custom-icon img {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  line-height: 0;
+  margin: 0;
+  width: 24px;
+  height: auto;
 }
 .social-media-icons a:link, .social-media-icons a:visited {
   color: #666666;

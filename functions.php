@@ -20,7 +20,7 @@ function ct_cele_register_required_plugins()
             'required'  => false,
         ),
     );
-    
+
     $config = array(
         'id'           => 'ct-cele',
         'default_path' => '',
@@ -235,14 +235,13 @@ add_filter('comment_form_default_fields', 'ct_cele_update_fields');
 if (! function_exists('ct_cele_update_comment_field')) {
     function ct_cele_update_comment_field($comment_field)
     {
-
         // don't filter the WooCommerce review form
         if (function_exists('is_woocommerce')) {
             if (is_woocommerce()) {
                 return $comment_field;
             }
         }
-        
+
         $comment_field =
             '<p class="comment-form-comment">
 	            <label for="comment">' . esc_html_x("Comment", "noun", "cele") . '</label>
@@ -450,7 +449,10 @@ if (! function_exists('ct_cele_social_array')) {
             'xing'          => 'cele_xing_profile',
             'yahoo'         => 'cele_yahoo_profile',
             'yelp'          => 'cele_yelp_profile',
-            '500px'         => 'cele_500px_profile'
+            '500px'         => 'cele_500px_profile',
+            'social_icon_custom_1' => 'social_icon_custom_1_profile',
+            'social_icon_custom_2' => 'social_icon_custom_2_profile',
+            'social_icon_custom_3' => 'social_icon_custom_3_profile'
         );
 
         return apply_filters('ct_cele_social_array_filter', $social_sites);
@@ -510,7 +512,15 @@ if (! function_exists('ct_cele_social_icons_output')) {
 						<i class="<?php echo esc_attr($class); ?>"></i>
 						<span class="screen-reader-text"><?php echo esc_html($active_site);  ?></span>
 					</a>
-				<?php } else { ?>
+                <?php } elseif ($active_site == 'social_icon_custom_1' || $active_site == 'social_icon_custom_2' || $active_site == 'social_icon_custom_3') { ?>
+						<li>
+							<a class="custom-icon" target="_blank"
+							href="<?php echo esc_url(get_theme_mod($active_site)); ?>">
+							<img class="icon" src="<?php echo esc_url(get_theme_mod($active_site .'_image')); ?>" style="width: <?php echo absint(get_theme_mod($active_site . '_size')); ?>px;" />
+								<span class="screen-reader-text"><?php echo esc_html($active_site);  ?></span>
+							</a>
+						</li>
+					<?php } else { ?>
 					<a class="<?php echo esc_attr($active_site); ?>" target="_blank"
 					   href="<?php echo esc_url(get_theme_mod($key)); ?>">
 						<i class="<?php echo esc_attr($class); ?>"
@@ -518,7 +528,7 @@ if (! function_exists('ct_cele_social_icons_output')) {
 						<span class="screen-reader-text"><?php echo esc_html($active_site);  ?></span>
 					</a>
 					<?php
-                }
+					}
                 echo '</li>';
             }
             echo "</ul>";
@@ -771,7 +781,7 @@ add_filter('get_the_archive_description', 'ct_cele_modify_archive_descriptions')
 function ct_cele_scroll_to_top_arrow()
 {
     $setting = get_theme_mod('scroll_to_top');
-    
+
     if ($setting == 'yes') {
         echo '<button id="scroll-to-top" class="scroll-to-top"><span class="screen-reader-text">'. esc_html__('Scroll to the top', 'cele') .'</span><i class="fas fa-arrow-up"></i></button>';
     }
@@ -791,7 +801,7 @@ function ct_cele_output_last_updated_date()
         if (
             ($updated_customizer == 'yes' && ($updated_post != 'no'))
             || $updated_post == 'yes'
-            ) {
+        ) {
             echo '<p class="last-updated">'. esc_html__("Last updated on", "cele") . ' ' . get_the_modified_date() . ' </p>';
         }
     }

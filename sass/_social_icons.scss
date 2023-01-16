@@ -10,6 +10,7 @@
   a {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -19,6 +20,19 @@
     color: $color-gray-40;
     transition: all 0.2s ease-in-out;
 
+    &.custom-icon {
+
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        line-height: 0;
+        margin: 0;
+        width: 24px;
+        height: auto;
+      }
+    }
     &:link,
     &:visited {
       color: $color-gray-40;
