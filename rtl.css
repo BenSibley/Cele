@@ -1855,6 +1855,10 @@ li.pingback.bypostauthor:before {
   z-index: -1;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
+  background: #666666;
+}
+.social-media-icons a.custom-icon:after {
+  background: #fff;
 }
 
 @media all and (min-width: 68.75em) {

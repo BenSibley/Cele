@@ -59,6 +59,10 @@
       transform: scale(0);
       z-index: -1;
       transition: all 0.2s ease-in-out;
+      background: $color-gray-40;
+    }
+    &.custom-icon:after {
+      background: #fff;
     }
   }
 }
