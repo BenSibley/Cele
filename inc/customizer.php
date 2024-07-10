@@ -123,6 +123,8 @@ function ct_cele_add_customizer_content($wp_customize)
                 $label = __('ArtStation', 'cele');
             } elseif ($social_site == 'email-form') {
                 $label = __('Contact Form', 'cele');
+            } elseif ($social_site == 'twitter') {
+                $label = __('X (Twitter)', 'cele');
             }
 
             if ($social_site == 'skype') {
