@@ -116,7 +116,7 @@ module.exports = function(grunt) {
                     'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/cele" || true',
                     'rm -R "/Users/bensibley/Dropbox/Compete Themes/Distribution/cele.zip" || true',
                     // copy folder without any project/meta files
-                    'rsync -r "/Users/bensibley/Sites/cele/wp-content/themes/cele" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
+                    'rsync -r "/Users/bensibley/Sites/Compete Themes/cele/wp-content/themes/cele" "/Users/bensibley/Dropbox/Compete Themes/Distribution/" <%= excludeFiles %>',
                     // open dist
                     'cd "/Users/bensibley/Dropbox/Compete Themes/Distribution/"',
                     // zip the cele folder
