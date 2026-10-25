@@ -15,14 +15,19 @@ function ct_cele_register_recommended_plugins()
         'id'      => 'ct-cele',
         'plugins' => array(
             array(
-                'name' => 'Independent Analytics',
-                'slug' => 'independent-analytics',
+                'name'        => 'Independent Analytics',
+                'slug'        => 'independent-analytics',
+                'description' => __('Simple, privacy-friendly visitor stats right in your WordPress dashboard. A Google Analytics alternative.', 'cele'),
+            ),
+            array(
+                'name'        => 'Resolver',
+                'slug'        => 'resolver-ai-chatbot',
+                'description' => __('An AI chatbot that answers your visitors\' questions using your site\'s content.', 'cele'),
             ),
         ),
-        'message' => __('The makers of the Cele theme now recommend installing Independent Analytics, their new plugin for visitor tracking.', 'cele'),
     ));
 }
-add_action('admin_init', 'ct_cele_register_recommended_plugins');
+add_action('init', 'ct_cele_register_recommended_plugins');
 
 if (! function_exists(('ct_cele_set_content_width'))) {
     function ct_cele_set_content_width()
