@@ -125,6 +125,8 @@ function ct_cele_add_customizer_content($wp_customize)
                 $label = __('Contact Form', 'cele');
             } elseif ($social_site == 'twitter') {
                 $label = __('X (Twitter)', 'cele');
+            } elseif ($social_site == 'tiktok') {
+                $label = __('TikTok', 'cele');
             }
 
             if ($social_site == 'skype') {

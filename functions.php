@@ -360,6 +360,8 @@ if (! function_exists('ct_cele_social_array')) {
             'linkedin'      => 'cele_linkedin_profile',
             'pinterest'     => 'cele_pinterest_profile',
             'youtube'       => 'cele_youtube_profile',
+            'tiktok'        => 'cele_tiktok_profile',
+            'threads'       => 'cele_threads_profile',
             'rss'           => 'cele_rss_profile',
             'email'         => 'cele_email_profile',
             'phone'         => 'cele_phone_profile',
