@@ -5,15 +5,15 @@ Theme URI: https://www.competethemes.com/cele/
 Author: Compete Themes
 Author URI: https://www.competethemes.com/
 Description: Cele is a refreshingly simple and clean theme. It’s been carefully designed to look and perform great across mobile devices, computers, and tablets. Use this responsive blogging theme for a personal journal, podcast, music review site, or even a travel blog. Thanks to the minimalist and professional design, Cele is also appropriate for corporate business blog websites. Cele is also fully compatible with the new Gutenberg post editor. Preview Cele now on desktop, tablets, and mobile with the interactive live demo: https://www.competethemes.com/demos/?theme=cele
-Version: 1.30
+Version: 1.31
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, two-columns, left-sidebar, accessibility-ready, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
+Tags: one-column, two-columns, left-sidebar, custom-logo, custom-menu, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog, education, news
 Text Domain: cele
-Tested up to: 6.5
+Tested up to: 7.1
 Requires PHP: 5.4
 
-Cele WordPress Theme, Copyright 2024 Compete Themes
+Cele WordPress Theme, Copyright 2026 Compete Themes
 Cele is distributed under the terms of the GNU GPL
 */
 /*===== Variables =====*/
@@ -23,26 +23,20 @@ Cele is distributed under the terms of the GNU GPL
 /*===== Mixins =====*/
 /***** Silent Classes *****/
 h1 {
-  font-size: 1.3125em;
-  /* 21px / 16px */
-  line-height: 1.143;
-  /* 24px */
+  font-size: 1.3125em; /* 21px / 16px */
+  line-height: 1.143; /* 24px */
 }
 
 .comment-reply-title, .comments-number h2, h2 {
-  font-size: 1.125em;
-  /* 18px / 16px */
-  line-height: 1.333;
-  /* 24px */
+  font-size: 1.125em; /* 18px / 16px */
+  line-height: 1.333; /* 24px */
 }
 
 .widget > *, .pagination a,
 .pagination span, .post-categories-blog,
 .post-tags-blog, .wp-block-table figcaption {
-  font-size: 0.875em;
-  /* 14px / 16px */
-  line-height: 1.714;
-  /* 24px */
+  font-size: 0.875em; /* 14px / 16px */
+  line-height: 1.714; /* 24px */
 }
 
 .single-attachment .attachment-caption, .further-reading span, .post-tags a, .post-byline span, .menu-primary a, .tagline, .site-footer span, .comment-footer a,
@@ -66,10 +60,8 @@ textarea, .wp-caption-text,
 .size-medium figcaption,
 .size-thumbnail figcaption,
 .wp-block-image figcaption {
-  font-size: 0.75em;
-  /* 12px / 16px */
-  line-height: 1.5;
-  /* 18px */
+  font-size: 0.75em; /* 12px / 16px */
+  line-height: 1.5; /* 18px */
 }
 
 .woocommerce-account .woocommerce-MyAccount-navigation li a {
@@ -80,8 +72,7 @@ textarea, .wp-caption-text,
 .post-title a, .site-title a {
   border: none;
   color: #333333;
-  -webkit-transition: color 0.1s ease-in-out;
-          transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 .post-title a:link, .site-title a:link, .post-title a:visited, .site-title a:visited {
   color: #333333;
@@ -142,8 +133,7 @@ a {
   text-decoration: none;
   border-bottom: solid 1px #A5D3ED;
   color: #333333;
-  -webkit-transition: border-color 0.2s;
-          transition: border-color 0.2s;
+  transition: border-color 0.2s;
 }
 a:link {
   color: #333333;
@@ -186,8 +176,7 @@ a:hover, a:active, a:focus {
   left: 100%;
   height: 1px;
   background: #333333;
-  -webkit-transition: left 0.2s ease-in-out;
-          transition: left 0.2s ease-in-out;
+  transition: left 0.2s ease-in-out;
 }
 .post-byline a:hover, .post-byline a:active, .post-byline a:focus,
 .post-content a:hover,
@@ -476,8 +465,7 @@ textarea {
   border: solid 1px #E6E6E6;
   border-radius: 3px;
   -webkit-appearance: none;
-  -webkit-transition: all 0.1s ease-in-out;
-          transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -494,8 +482,7 @@ textarea:focus {
 
 textarea {
   max-width: 41.625em;
-  overflow: auto;
-  /* to hide scrollbar in IE */
+  overflow: auto; /* to hide scrollbar in IE */
 }
 
 input[type=submit] {
@@ -508,8 +495,7 @@ input[type=submit] {
   background: none;
   border-radius: 3px;
   -webkit-appearance: none;
-  -webkit-transition: all 0.1s ease-in-out;
-          transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 input[type=submit]:hover {
   cursor: pointer;
@@ -520,8 +506,7 @@ input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
 }
 
 input[type=search] {
-  padding-left: 0.375em;
-  /* so safari 'x' doesn't get cut off */
+  padding-left: 0.375em; /* so safari 'x' doesn't get cut off */
 }
 
 ::-webkit-input-placeholder {
@@ -547,20 +532,17 @@ a img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
   html {
-    -webkit-text-size-adjust: none;
-    /* none for no scaling */
+    -webkit-text-size-adjust: none; /* none for no scaling */
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   html {
-    -webkit-text-size-adjust: none;
-    /* none for no scaling */
+    -webkit-text-size-adjust: none; /* none for no scaling */
   }
 }
 .screen-reader-text {
   position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   height: 1px;
@@ -578,8 +560,7 @@ a img {
   z-index: 99;
   padding: 1.5em;
   background: #333333;
-  -webkit-transition: top 0.2s ease-in-out;
-          transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 .skip-content:focus {
   top: 0;
@@ -605,33 +586,23 @@ a img {
   body {
     padding: 1.5em;
   }
-
   h1 {
-    font-size: 1.75em;
-    /* 28px / 16px */
-    line-height: 1.357;
-    /* 38px */
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1.357; /* 38px */
   }
-
   h2 {
-    font-size: 1.3125em;
-    /* 21px / 16px */
-    line-height: 1.143;
-    /* 24px */
+    font-size: 1.3125em; /* 21px / 16px */
+    line-height: 1.143; /* 24px */
   }
-
   h3 {
-    font-size: 1.125em;
-    /* 18px / 16px */
-    line-height: 1.333;
-    /* 24px */
+    font-size: 1.125em; /* 18px / 16px */
+    line-height: 1.333; /* 24px */
   }
 }
 @media all and (min-width: 56.25em) {
   body {
     padding: 0;
   }
-
   .main {
     float: left;
     width: 69.445%;
@@ -735,21 +706,21 @@ a img {
 
 @media all and (min-width: 56.25em) {
   .blog .entry:after,
-.archive .entry:after,
-.search .entry:after {
+  .archive .entry:after,
+  .search .entry:after {
     right: -15.83346%;
     left: -15.83346%;
   }
 }
 @media all and (min-width: 68.75em) {
   .blog .entry,
-.archive .entry,
-.search .entry {
+  .archive .entry,
+  .search .entry {
     margin-top: 3em;
   }
   .blog .post-content,
-.archive .post-content,
-.search .post-content {
+  .archive .post-content,
+  .search .post-content {
     padding-bottom: 1.5em;
   }
 }
@@ -849,8 +820,7 @@ li.pingback.bypostauthor:before {
 .comment-footer i {
   color: #666666;
   float: right;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .comment-footer i.fa-edit {
   margin-right: 8px;
@@ -898,11 +868,9 @@ li.pingback.bypostauthor:before {
 
 @media all and (min-width: 37.5em) {
   .comments-number h3,
-.comment-respond h3 {
-    font-size: 1.3125em;
-    /* 21px / 16px */
-    line-height: 1.143;
-    /* 24px */
+  .comment-respond h3 {
+    font-size: 1.3125em; /* 21px / 16px */
+    line-height: 1.143; /* 24px */
   }
 }
 .site-footer {
@@ -931,8 +899,9 @@ li.pingback.bypostauthor:before {
   color: #fff;
   padding: 9px 0;
   width: 60px;
-  -webkit-transition: background 0.2s, -webkit-transform 0.3s;
-          transition: background 0.2s, transform 0.3s;
+  transition: background 0.2s, -webkit-transform 0.3s;
+  transition: background 0.2s, transform 0.3s;
+  transition: background 0.2s, transform 0.3s, -webkit-transform 0.3s;
 }
 .scroll-to-top.visible {
   -webkit-transform: translateY(-45px);
@@ -948,8 +917,9 @@ li.pingback.bypostauthor:before {
 }
 .scroll-to-top i {
   font-size: 21px;
-  -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 @media all and (min-width: 56.25em) {
@@ -1074,18 +1044,14 @@ li.pingback.bypostauthor:before {
 
 @media all and (min-width: 50em) {
   .site-title {
-    font-size: 1.3125em;
-    /* 21px / 16px */
-    line-height: 1.143;
-    /* 24px */
+    font-size: 1.3125em; /* 21px / 16px */
+    line-height: 1.143; /* 24px */
   }
 }
 @media all and (min-width: 62.5em) {
   .site-title {
-    font-size: 1.75em;
-    /* 28px / 16px */
-    line-height: 1.357;
-    /* 38px */
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1.357; /* 38px */
   }
 }
 .pagination {
@@ -1133,8 +1099,7 @@ li.pingback.bypostauthor:before {
   height: 32px;
   border: solid 1px #A5D3ED;
   opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-          transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 .toggle-navigation:hover {
   cursor: pointer;
@@ -1173,7 +1138,6 @@ li.pingback.bypostauthor:before {
 .menu-unset > ul {
   list-style: none;
   margin: 1.875em 0;
-  /* Tier 2 */
 }
 .menu-primary-items ul,
 .menu-unset > ul ul {
@@ -1186,6 +1150,10 @@ li.pingback.bypostauthor:before {
 .menu-primary-items > li:first-child a,
 .menu-unset > ul > li:first-child a {
   margin-top: 0;
+}
+.menu-primary-items,
+.menu-unset > ul {
+  /* Tier 2 */
 }
 .menu-primary-items .menu-item-has-children,
 .menu-primary-items .page_item_has_children,
@@ -1208,16 +1176,14 @@ li.pingback.bypostauthor:before {
   margin: 0;
   padding: 0 0.75em 0 0;
   border-right: solid 1px #F0F0F0;
-  -webkit-transition: max-height 0.2s ease-in-out;
-          transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
 }
 .menu-primary-items .menu-item-has-children ul li,
 .menu-primary-items .page_item_has_children ul li,
 .menu-unset > ul .menu-item-has-children ul li,
 .menu-unset > ul .page_item_has_children ul li {
   opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .menu-primary-items .menu-item-has-children ul li:first-child,
 .menu-primary-items .page_item_has_children ul li:first-child,
@@ -1263,8 +1229,7 @@ li.pingback.bypostauthor:before {
   color: #B3B3B3;
   color: #999999;
   border: solid 1px #E6E6E6;
-  -webkit-transition: border-color 0.1s ease-in-out;
-          transition: border-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
 }
 .toggle-dropdown:hover {
   cursor: pointer;
@@ -1288,11 +1253,9 @@ li.pingback.bypostauthor:before {
   .toggle-navigation {
     display: none;
   }
-
   .menu-primary-container {
     max-height: none;
   }
-
   .toggle-dropdown {
     height: 1.125em;
     width: 1.125em;
@@ -1328,8 +1291,7 @@ li.pingback.bypostauthor:before {
   right: 0;
   background: white;
   opacity: 0;
-  -webkit-transition: opacity 0.1s ease-in-out;
-          transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 .featured-image > a:focus:after {
   opacity: 0.2;
@@ -1354,8 +1316,8 @@ li.pingback.bypostauthor:before {
   top: 50%;
   left: 50%;
   right: auto;
-  -webkit-transform: translateX(50%) translateY(-50%);
-          transform: translateX(50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 .featured-image .ccfic {
   position: absolute;
@@ -1491,12 +1453,9 @@ li.pingback.bypostauthor:before {
 
 @media all and (min-width: 37.5em) {
   .post-title {
-    font-size: 1.3125em;
-    /* 21px / 16px */
-    line-height: 1.143;
-    /* 24px */
+    font-size: 1.3125em; /* 21px / 16px */
+    line-height: 1.143; /* 24px */
   }
-
   .further-reading div {
     width: 50%;
     display: inline-block;
@@ -1512,10 +1471,8 @@ li.pingback.bypostauthor:before {
 }
 @media all and (min-width: 50em) {
   .post-title {
-    font-size: 1.75em;
-    /* 28px / 16px */
-    line-height: 1.357;
-    /* 38px */
+    font-size: 1.75em; /* 28px / 16px */
+    line-height: 1.357; /* 38px */
   }
 }
 @media all and (min-width: 56.25em) {
@@ -1524,18 +1481,15 @@ li.pingback.bypostauthor:before {
     width: 115.49762398%;
     padding-bottom: 57.75%;
   }
-
   .further-reading:before, .further-reading:after {
     right: -15.83346%;
     left: -15.83346%;
   }
-
   .wp-block-image.alignfull,
-.wp-block-cover {
+  .wp-block-cover {
     right: -16%;
     width: 132%;
   }
-
   .wp-block-image.alignwide {
     right: -9%;
     width: 118%;
@@ -1545,15 +1499,12 @@ li.pingback.bypostauthor:before {
   .post-header {
     margin-bottom: 3em;
   }
-
   .featured-image {
     margin: 2.25em 0;
   }
-
   .post-content {
     margin-top: 2.25em;
   }
-
   .further-reading {
     margin: 3em 0;
     padding: 2.25em 0;
@@ -1645,15 +1596,12 @@ li.pingback.bypostauthor:before {
     position: fixed;
     top: 0;
   }
-
   .logged-in .main-sidebar.fixed-top {
     top: 32px;
   }
-
   .sidebar-inner {
     padding: 2.25em 0;
   }
-
   .sidebar-primary-container {
     max-height: none;
     overflow: visible;
@@ -1668,7 +1616,6 @@ li.pingback.bypostauthor:before {
   .main-sidebar.fixed-top {
     top: -12px;
   }
-
   .logged-in .main-sidebar.fixed-top {
     top: 20px;
   }
@@ -1683,15 +1630,12 @@ li.pingback.bypostauthor:before {
   .main-sidebar.fixed-top {
     top: -24px;
   }
-
   .logged-in .main-sidebar.fixed-top {
     top: 8px;
   }
-
   .sidebar-inner {
     padding: 3em 0;
   }
-
   .sidebar-primary {
     margin-top: 1.5em;
   }
@@ -1816,15 +1760,14 @@ li.pingback.bypostauthor:before {
   border-radius: 50%;
   z-index: 9;
   color: #666666;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .social-media-icons a.custom-icon img {
   position: absolute;
   right: 50%;
   top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
   line-height: 0;
   margin: 0;
   width: 24px;
@@ -1853,8 +1796,7 @@ li.pingback.bypostauthor:before {
   -webkit-transform: scale(0);
           transform: scale(0);
   z-index: -1;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: #666666;
 }
 .social-media-icons a.custom-icon:after {
