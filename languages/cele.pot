@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cele 1.31\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cele\n"
-"POT-Creation-Date: 2026-10-26 17:07:26+00:00\n"
+"POT-Creation-Date: 2026-10-27 12:36:19+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -110,15 +110,13 @@ msgid "<a href=\"%1$s\" rel=\"nofollow\">%2$s Theme</a> by Compete Themes."
 msgstr ""
 
 #: functions.php:20
-msgid ""
-"Simple, privacy-friendly visitor stats right in your WordPress dashboard. A "
-"Google Analytics alternative."
+msgid "a simple, privacy-friendly alternative to Google Analytics."
 msgstr ""
 
 #: functions.php:25
 msgid ""
-"An AI chatbot that answers your visitors' questions using your site's "
-"content."
+"an AI-powered chatbot that trains on your website's content and answers "
+"visitor questions intelligently."
 msgstr ""
 
 #: functions.php:62
@@ -191,31 +189,31 @@ msgstr ""
 msgid "http://google.com"
 msgstr ""
 
-#: functions.php:255 functions.php:323 inc/customizer.php:284
+#: functions.php:255 functions.php:323 inc/customizer.php:286
 msgid "Continue Reading"
 msgstr ""
 
-#: functions.php:546
+#: functions.php:548
 msgid "Featured"
 msgstr ""
 
-#: functions.php:607
+#: functions.php:609
 msgid "Customizer settings deleted."
 msgstr ""
 
-#: functions.php:759
+#: functions.php:761
 msgid "Scroll to the top"
 msgstr ""
 
-#: functions.php:778
+#: functions.php:780
 msgid "Last updated on"
 msgstr ""
 
-#: functions.php:794
+#: functions.php:796
 msgid "Previous"
 msgstr ""
 
-#: functions.php:795
+#: functions.php:797
 msgid "Next"
 msgstr ""
 
@@ -223,50 +221,62 @@ msgstr ""
 msgid "Press \"Enter\" to skip to content"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:61
-#: inc/class-ct-recommended-plugins.php:62
-#: inc/class-ct-recommended-plugins.php:73
+#: inc/class-ct-recommended-plugins.php:78
+#: inc/class-ct-recommended-plugins.php:79
+#: inc/class-ct-recommended-plugins.php:91
 msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:77
+#: inc/class-ct-recommended-plugins.php:95
 #. translators: %s: theme name
 msgid "Free plugins from the makers of the %s theme."
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:83
+#: inc/class-ct-recommended-plugins.php:101
 msgid "Plugin"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:84
+#: inc/class-ct-recommended-plugins.php:102
 msgid "Description"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:119
-msgid "See all recommended plugins"
-msgstr ""
-
-#: inc/class-ct-recommended-plugins.php:126
+#: inc/class-ct-recommended-plugins.php:155
 #. translators: %s: theme name
 msgid "The makers of the %s theme recommend these free plugins:"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:177
+#: inc/class-ct-recommended-plugins.php:171
+msgid "New"
+msgstr ""
+
+#: inc/class-ct-recommended-plugins.php:183
+msgid "More Details"
+msgstr ""
+
+#: inc/class-ct-recommended-plugins.php:231
 msgid "Active"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:179
+#: inc/class-ct-recommended-plugins.php:234
 msgid "Coming soon"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:187
+#: inc/class-ct-recommended-plugins.php:243
 #. translators: %s: plugin name
 msgid "Activate %s"
 msgstr ""
 
-#: inc/class-ct-recommended-plugins.php:195
+#: inc/class-ct-recommended-plugins.php:245
 #. translators: %s: plugin name
 msgid "Install %s"
+msgstr ""
+
+#: inc/class-ct-recommended-plugins.php:258
+msgid "Activate Now"
+msgstr ""
+
+#: inc/class-ct-recommended-plugins.php:258
+msgid "Install Now"
 msgstr ""
 
 #: inc/customizer.php:26
@@ -373,115 +383,119 @@ msgstr ""
 msgid "X (Twitter)"
 msgstr ""
 
-#: inc/customizer.php:158
+#: inc/customizer.php:129
+msgid "TikTok"
+msgstr ""
+
+#: inc/customizer.php:160
 msgid "Custom icon 1 URL"
 msgstr ""
 
-#: inc/customizer.php:168
+#: inc/customizer.php:170
 msgid "Custom icon 1 image"
 msgstr ""
 
-#: inc/customizer.php:178
+#: inc/customizer.php:180
 msgid "Custom icon 1 size (px)"
 msgstr ""
 
-#: inc/customizer.php:189
+#: inc/customizer.php:191
 msgid "Custom icon 2 URL"
 msgstr ""
 
-#: inc/customizer.php:199
+#: inc/customizer.php:201
 msgid "Custom icon 2 image"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:211
 msgid "Custom icon 2 size (px)"
 msgstr ""
 
-#: inc/customizer.php:220
+#: inc/customizer.php:222
 msgid "Custom icon 3 URL"
 msgstr ""
 
-#: inc/customizer.php:230
+#: inc/customizer.php:232
 msgid "Custom icon 3 image"
 msgstr ""
 
-#: inc/customizer.php:240
+#: inc/customizer.php:242
 msgid "Custom icon 3 size (px)"
 msgstr ""
 
-#: inc/customizer.php:261
+#: inc/customizer.php:263
 msgid "Show full posts on blog?"
 msgstr ""
 
-#: inc/customizer.php:266 inc/customizer.php:386 inc/customizer.php:410
-#: inc/customizer.php:478
+#: inc/customizer.php:268 inc/customizer.php:388 inc/customizer.php:412
+#: inc/customizer.php:480
 msgid "Yes"
 msgstr ""
 
-#: inc/customizer.php:267 inc/customizer.php:387 inc/customizer.php:411
-#: inc/customizer.php:479
+#: inc/customizer.php:269 inc/customizer.php:389 inc/customizer.php:413
+#: inc/customizer.php:481
 msgid "No"
 msgstr ""
 
-#: inc/customizer.php:277
+#: inc/customizer.php:279
 msgid "Excerpt word count"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:291
 msgid "Read More button text"
 msgstr ""
 
-#: inc/customizer.php:299
+#: inc/customizer.php:301
 msgid "Display Controls"
 msgstr ""
 
-#: inc/customizer.php:310
+#: inc/customizer.php:312
 msgid "Post author name in byline"
 msgstr ""
 
-#: inc/customizer.php:314 inc/customizer.php:330 inc/customizer.php:346
-#: inc/customizer.php:362 inc/customizer.php:458
+#: inc/customizer.php:316 inc/customizer.php:332 inc/customizer.php:348
+#: inc/customizer.php:364 inc/customizer.php:460
 msgid "Show"
 msgstr ""
 
-#: inc/customizer.php:315 inc/customizer.php:331 inc/customizer.php:347
-#: inc/customizer.php:363 inc/customizer.php:459
+#: inc/customizer.php:317 inc/customizer.php:333 inc/customizer.php:349
+#: inc/customizer.php:365 inc/customizer.php:461
 msgid "Hide"
 msgstr ""
 
-#: inc/customizer.php:326
+#: inc/customizer.php:328
 msgid "Post date in byline"
 msgstr ""
 
-#: inc/customizer.php:342
+#: inc/customizer.php:344
 msgid "Post categories on blog page"
 msgstr ""
 
-#: inc/customizer.php:358
+#: inc/customizer.php:360
 msgid "Post tags on blog page"
 msgstr ""
 
-#: inc/customizer.php:371
+#: inc/customizer.php:373
 msgid "Scroll-to-Top Arrow"
 msgstr ""
 
-#: inc/customizer.php:381
+#: inc/customizer.php:383
 msgid "Display Scroll-to-top arrow?"
 msgstr ""
 
-#: inc/customizer.php:395
+#: inc/customizer.php:397
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:405
+#: inc/customizer.php:407
 msgid "Display the date each post was last updated?"
 msgstr ""
 
-#: inc/customizer.php:431
+#: inc/customizer.php:433
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:442
+#: inc/customizer.php:444
 msgid "Add Custom CSS Here:"
 msgstr ""
 
@@ -608,17 +622,17 @@ msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: functions.php:472 functions.php:473
+#: functions.php:474 functions.php:475
 msgctxt "noun"
 msgid "email"
 msgstr ""
 
-#: functions.php:533 header.php:35 inc/scripts.php:17
+#: functions.php:535 header.php:35 inc/scripts.php:17
 msgctxt "verb: open the menu"
 msgid "open menu"
 msgstr ""
 
-#: inc/customizer.php:251
+#: inc/customizer.php:253
 msgctxt "noun: the blog section"
 msgid "Blog"
 msgstr ""
